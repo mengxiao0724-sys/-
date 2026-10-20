@@ -421,8 +421,8 @@ public partial class MainViewModel : ObservableObject
             gray = image.Rgb1ToGray();
 
             // 2. 光照校正：HOperatorSet 输出一律 out HObject
-            HOperatorSet.Illuminate(gray, out HObject corrObj, 50, 50, 0.6);
-            corr = new HImage(corrObj);
+           // HOperatorSet.Illuminate(gray, out HObject corrObj, 50, 50, 0.6);
+            corr = new HImage(gray);
 
     
             // 3. 加载 ROI、模板、基准
